@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Lisgar Sports Analytics</title>
+<style>
+    @import "nav.css";
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="fantasy.html">Fantasy</a>
+        <a href="calender.html">Calender</a>
+        <a class="active" href="updates.html">What's New</a>
+        <a href="members.html">Members</a>
+        <a href="jobs.html">Current Jobs</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <iframe src="header.html" width=100%, frameborder="0"></iframe>
+
+
+
+<script>
+"use strict";
+// Bleacher Report API: cb588a7ba21147f6a841207eba57fdf8
+// Remember to add attribute link
+// https://newsapi.org/v2/top-headlines?sources=bleacher-report&apiKey=cb588a7ba21147f6a841207eba57fdf8
+
+// var url = 'https://newsapi.org/v2/top-headlines?' +
+//           'sources=bleacher-report&' +
+//           'apiKey=cb588a7ba21147f6a841207eba57fdf8';
+// var req = new Request(url);
+// fetch(req)
+//     .then(function(response) {
+//         console.log(response.json());
+//     });
+
+    var data;
+
+    fetch('https://newsapi.org/v2/top-headlines?sources=bleacher-report&apiKey=cb588a7ba21147f6a841207eba57fdf8')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(myJson) {
+            data = JSON.parse(JSON.stringify(myJson));
+            console.log(JSON.stringify(myJson));
+            //console.log(data);
+        });
+    
+    
+
+
+
+</script>
+</body>
+</html>

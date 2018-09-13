@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style>
+
+#header {
+    background-color: lightgrey;
+    height: 100px;
+}
+#HeaderText {
+    color: darkblue;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    
+}
+#logo1 {
+    float: left;
+}
+#logo2 {
+    float: right;
+}
+
+
+</style>
+
+</head>
+<body>
+    <div id="header">
+        <img src="img/logo.jpg" id="logo1" alt="Lisgar Logo" height="100" width="100">
+        <img src="img/logo.jpg" id="logo2" alt="Lisgar Logo" height="100" width="100">
+        <h1 id="HeaderText">Lisgar Sports Analytics Society</h1>
+
+    </div>
+
+<script>
+"use strict";
+    var title = document.getElementById("HeaderText");
+
+    window.addEventListener("resize", ()=> {
+        title.style.fontSize = window.innerWidth / 26 + "px";
+    }, false);
+    window.addEventListener("load", ()=> {
+        title.style.fontSize = window.innerWidth / 26 + "px";
+    }, false);
+
+
+
+</script>
+</body>
+</html>

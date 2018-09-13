@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Lisgar Sports Analytics</title>
+<style>
+    @import "nav.css";
+    #blogBody {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    #content {
+        grid-column-start: 1;
+    }
+    #sideBar {
+        grid-column-start: 2;
+    }
+    .entryImage {
+        background: silver;
+        padding: 24px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        float: left;
+    }
+    .entryTitle {
+        margin-top: 0px;
+        font-size: 36px;
+        margin-bottom: 10px;
+
+    }
+    .entryInfo {
+        background: #3366cc;
+        color: white;
+        float: left;
+        margin-bottom: 10px;
+        padding: 3px;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+    .entryContent {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    button{
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        background: #3366cc;
+        color: #fff;
+        border: 1px solid #3366cc;
+        border-radius: 10px;
+    }
+    button:hover{
+        background: #fff;
+        color: #3366cc;
+        border: 1px solid #3366cc;
+        border-radius: 10px;
+    }
+    .entry {
+        float: left;
+    }
+    .sidebarSection {
+        margin-left: 20px;
+        width: 200px;
+        border: 3px solid #3366cc;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+
+    
+    .sideTitle {
+        margin: 0;
+        padding: 4px;
+        background: #3366cc;
+        color: #fff;
+        border: 1px solid #3366cc;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    
+    li {
+        border-bottom: 1px solid #ccc;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    
+    li:last-child {
+        border: none;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        width: 100%;
+        
+        -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+        -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+        -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+        -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+        transition: font-size 0.3s ease, background-color 0.3s ease;
+    }
+    
+    li a:hover {
+        font-size: 24px;
+        background: #f6f6f6;
+    }
+    @media screen and (max-width: 800px) {
+        #blogBody {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+        }
+        #content {
+            grid-column-start: 1;
+            grid-row-start: 2;
+        }
+        #sideBar {
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+        .entryImage {
+            padding-left: calc((80% - 100px) / 2);
+            padding-right: calc((80% - 100px) / 2);
+        }
+        .sidebarSection {
+            width: 180px;
+            float: left;
+        }
+        #sidebar {
+        margin-bottom: 40px;
+        }
+    }
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a class="active" href="blog.html">Blog</a>
+        <a href="fantasy.html">Fantasy</a>
+        <a href="calender.html">Calender</a>
+        <a href="updates.html">What's New</a>
+        <a href="members.html">Members</a>
+        <a href="jobs.html">Current Jobs</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <iframe src="header.html" width=100%, frameborder="0"></iframe>
+
+    <section id="blogBody">
+        <section id="content">
+            <div class="entry" id="entry2">
+                <div class="entryImage">
+                        <img src="img/missing.gif" alt="image" width="240px" height="240px">
+                </div>
+                <div class="entryHeading">
+                    <h2 class="entryTitle">This is an Interesting Title</h2>
+                    <div class="entryInfo">Work of John Doe | January 1st, 2001</div>
+                </div>
+                <br /> 
+                <br /> 
+                <div class="entryContent">  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Dolorem id explicabo ipsam delectus voluptate minima magni eos, aliquid 
+                    exercitationem velit voluptates tempora esse asperiores labore officiis quasi 
+                    consequatur repellat commodi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Dolorem id explicabo ipsam delectus voluptate minima magni eos, aliquid 
+                    exercitationem velit voluptates tempora esse asperiores labore officiis quasi 
+                    consequatur repellat commodi.
+                    
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Dolorem id explicabo ipsam delectus voluptate minima magni eos, aliquid 
+                    exercitationem velit voluptates tempora esse asperiores labore officiis quasi 
+                    consequatur repellat commodi.</div>
+                <div class="entryResource">
+                    <button onclick="location.href='index.html'">Document</button>
+                    <button onclick="location.href='index.html'">Presentation</button>
+                    <button onclick="location.href='index.html'">Additional Material</button>
+                </div>
+            </div>
+            <hr/>
+            <div class="entry" id="entry1">
+                <div class="entryImage">
+                        <img src="img/missing.gif" alt="image" width="240px" height="240px">
+                </div>
+                <div class="entryHeading">
+                    <h2 class="entryTitle">This is a Title</h2>
+                    <div class="entryInfo">Work of John Doe | January 1st, 2001</div>
+                </div>
+                <br /> 
+                <br /> 
+                <div class="entryContent">  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Dolorem id explicabo ipsam delectus voluptate minima magni eos, aliquid 
+                    exercitationem velit voluptates tempora esse asperiores labore officiis quasi 
+                    consequatur repellat commodi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Dolorem id explicabo ipsam delectus voluptate minima magni eos, aliquid 
+                    exercitationem velit voluptates tempora esse asperiores labore officiis quasi 
+                    consequatur repellat commodi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Dolorem id explicabo ipsam delectus voluptate minima magni eos, aliquid 
+                    exercitationem velit voluptates tempora esse asperiores labore officiis quasi 
+                    consequatur repellat commodi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Dolorem id explicabo ipsam delectus voluptate minima magni eos, aliquid 
+                    exercitationem velit voluptates tempora esse asperiores labore officiis quasi 
+                    consequatur repellat commodi.</div>
+                <div class="entryResource">
+                    <button onclick="location.href='index.html'">Document</button>
+                    <button onclick="location.href='index.html'">Presentation</button>
+                    <button onclick="location.href='index.html'">Additional Material</button>
+                </div>
+            </div>
+        </section>
+        <section id="sidebar">
+            <div class="sidebarSection">
+                <h3 class="sideTitle">Upcoming Topics</h3>
+                <ul>
+                    <li><a href="#">Ottawa</a></li>
+                    <li><a href="#">Toronto</a></li>
+                    <li><a href="#">Montreal</a></li>
+                    <li><a href="#">Halifax</a></li>
+                    <li><a href="#">Vancouver</a></li>
+                </ul>
+            </div>
+            <div class="sidebarSection">
+                <h3 class="sideTitle">Best Posts</h3>
+                <ul>
+                    <li><a href="#">Ottawa</a></li>
+                    <li><a href="#">Toronto</a></li>
+                    <li><a href="#">Montreal</a></li>
+                    <li><a href="#">Halifax</a></li>
+                    <li><a href="#">Vancouver</a></li>
+                </ul>
+            </div>
+            <div class="sidebarSection">
+                <h3 class="sideTitle">Sports News</h3>
+                <ul>
+                    <li><a href="#">Ottawa</a></li>
+                    <li><a href="#">Toronto</a></li>
+                    <li><a href="#">Montreal</a></li>
+                    <li><a href="#">Halifax</a></li>
+                    <li><a href="#">Vancouver</a></li>
+                </ul>
+            </div>
+
+            
+        </section>
+    </section>
+
+
+<script>
+"use strict";
+
+</script>
+</body>
+</html>

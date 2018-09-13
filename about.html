@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Lisgar Sports Analytics</title>
+<style>
+    @import "nav.css";
+
+    #caption {
+        position: absolute;
+        padding: 10px;
+        box-sizing: border-box;
+        color: white;
+        font-size: 14pt;
+        font-family: sans-serif;
+        background-color: #3366cc;
+        opacity: 0.6;
+        width: 100%;
+    }
+
+    #photoSection {
+        position: absolute;
+        overflow: hidden;
+        border: 10px solid #3366cc;
+    }
+
+    #photo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #welcome {
+        margin-top: 120px;
+        margin-bottom: 40px;
+        width: 100%;
+        color: #0e3481;
+    }
+    #welcomeTitle {
+        font-size: 44px;
+    }
+    #welcomeMessage {
+        font-size: 20px;
+    }
+
+    #welcomeTitle, #welcomeMessage, #headsMessage {
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    #headsMessage {
+        padding: 50px;
+        background-color: #3366cc;
+        color: lightgrey;
+    }
+
+
+    @media screen and (max-width: 800px) and (min-width: 600px) {
+        #info {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px;
+            grid-template-rows: 240px 380px 187px 250px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-left: calc((100% - 600px) / 2);
+        }
+    }
+    @media screen and (max-width: 1000px) and (min-width: 800px) {
+        #info {
+            display: grid;
+            grid-template-columns: 133px 133px 133px 133px 133px 133px;
+            grid-template-rows: 319px 320px 249px 332px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-left: calc((100% - 800px) / 2);
+        }
+    }
+    @media screen and (max-width: 1200px) and (min-width: 1000px) {
+        #info {
+            display: grid;
+            grid-template-columns: 166px 166px 166px 166px 166px 166px;
+            grid-template-rows: 398px 280px 311px 415px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-left: calc((100% - 1000px) / 2);
+            
+        }
+
+    }
+    @media screen and (min-width: 1200px) {
+        #info {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px 200px 200px;
+            grid-template-rows: 480px 280px 375px 500px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-left: calc((100% - 1200px) / 2);
+        }
+    }
+
+    #groupPhoto, #photoOne, #photoTwo, #actionPhoto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    #a, #b, #c, #d, #e, #f {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-right: 5px;
+        }
+    #a {
+        grid-column: 1 / span 6;
+        grid-row-start: 1;
+    }
+
+    #b {
+        grid-column: 1 / span 6;
+        grid-row-start: 2;
+
+    }
+
+    #c {
+        grid-column: 1 / span 3;
+        grid-row-start: 3;
+    }
+
+    #d {
+        grid-column: 4 / span 3;
+        grid-row-start: 3;
+
+    }
+
+    #e {
+        grid-column: 1 / span 2;
+        grid-row-start: 4;
+
+    }
+
+    #f {
+        grid-column: 3 / span 4;
+        grid-row-start: 4;
+
+    }
+
+
+    
+
+
+</style>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="fantasy.html">Fantasy</a>
+        <a href="calender.html">Calender</a>
+        <a href="updates.html">What's New</a>
+        <a href="members.html">Members</a>
+        <a href="jobs.html">Current Jobs</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <iframe src="header.html" width=100%, frameborder="0"></iframe>
+
+    <section id="gallery">
+        <div id="photoSection">
+            <img id="photo" src="img/memchu.jpg" alt="photo" />
+            <div id="caption">
+                Stanford Memorial Church - the church used to have an 80' bell tower, which fell in the 1906 earthquake.
+            </div>
+        </div>
+    </section>
+
+    <section id="welcome">
+        <h1 id="welcomeTitle">- Welcome -</h1>
+        <p id="welcomeMessage">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quas dolor laboriosam dolores, a, 
+            pariatur quam veritatis, recusandae eum hic error suscipit repellat et!
+        </p>
+    </section>
+
+    <section id="info">
+        <div id="a">
+            <img id="groupPhoto" src="img/missing2.5.gif" style="width: 98%;" alt="Group Photo" />
+        </div>
+        <div id="b">
+            <p id="headsMessage">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vero repudiandae distinctio ratione. 
+                Iste aut laborum nobis alias quae saepe odit porro placeat, repudiandae unde molestias soluta 
+                dignissimos facere inventore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quo 
+                iusto odit est nisi eos maiores ipsum necessitatibus saepe! Veniam fugiat facere autem debitis 
+                nihil dolore totam doloremque obcaecati accusantium. Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Quasi modi nam esse ad officia corrupti soluta quaerat perferendis voluptate 
+                provident rem, aperiam mollitia cupiditate aliquam totam. Sequi esse inventore dicta. Lorem ipsum 
+                dolor sit amet consectetur adipisicing elit. Pariatur saepe nemo sapiente ipsa officia, 
+                architecto maiores, iusto accusantium, quae et sed culpa quibusdam voluptatem velit porro. 
+                Numquam expedita reprehenderit molestias?
+            </p>
+        </div>
+        <div id="c">
+            <img id="photoOne" src="img/missing1.6.gif" style="width: 98%;" alt="Heads Photo" />
+            
+        </div>
+        <div id="d">
+            <img id="photoTwo" src="img/missing1.6.gif" style="width: 98%;" alt="Execs Photo" />
+        </div>
+        <div id="e">
+            <p id="contactInfo">
+
+            </p>    
+        </div>
+        <div id="f">
+            <img id="actionPhoto" src="img/missing1.6.gif" style="width: 98%;" alt="Action Photo" />
+        </div>
+        
+
+
+    </section>
+
+
+
+<script>
+"use strict";
+
+
+var photoArray = [
+		{filename: "img/memchu.jpg",
+		 caption: "Stanford Memorial Church - the church used to have an 80' bell tower, which fell in the 1906 earthquake."},
+		{filename: "img/quad.jpg",
+		 caption: "The Stanford Quad"},
+		{filename: "img/hoop.jpg",
+		 caption: "The <i>Red Hoop Fountain</i> with Green Library in the background."},
+		{filename: "img/memorial-court.jpg",
+		 caption: "Memorial Court (in the front of the Quad) with Rodin's <i>Burghers of Calais</i> statues."},
+		{filename: "img/gates.jpg",
+		 caption: "The Gates Building - home of Stanford Computer Science."},
+		{filename: "img/stone-river.jpg",
+		 caption: "The Stone River statue near the Cantor Arts Center (Stanford's own art museum)."},
+	];
+
+	var pos = 0;
+	var entireSection = document.getElementById("photoSection");
+	var description = document.getElementById("caption");
+	var picture = document.getElementById("photo");
+    var gallery = document.getElementById("gallery");
+    
+    var group = document.getElementById("a");
+    
+    var heads = document.getElementById("c");
+    var execs = document.getElementById("d");
+    var action = document.getElementById("f");
+
+
+
+
+	window.addEventListener("load", handleResize, false);
+	window.addEventListener("resize", handleResize, false);
+    window.addEventListener("load", id, false);
+    
+    var id = setInterval(frame, 3000);
+
+    function frame() {
+        pos++;
+		if (pos == photoArray.length){
+			pos = 0;
+		}
+		picture.src = photoArray[pos].filename;
+		description.innerHTML = photoArray[pos].caption;
+    }
+    
+	function handleResize() {
+		console.log(picture.width);
+        entireSection.style.width = (parseFloat(window.innerWidth) - 40) + "px";
+        entireSection.style.height = parseFloat(entireSection.style.width) / 2.5 + "px";
+        gallery.style.height = parseFloat(entireSection.style.width) / 2.5 + "px";
+        entireSection.style.marginRight = "20px";
+        description.style.bottom = "0px";
+        description.style.left = "0px";
+
+        // if (parseFloat(window.innerWidth) <= 800) {
+        //     group.style.width = window.innerWidth;
+        //     group.style.height = parseFloat(window.innerWidth) / 2.5 + "px";
+        //     heads.style.width = window.innerWidth;
+        //     heads.style.height = parseFloat(heads.style.width) / 1.6 + "px";
+        //     execs.style.width = window.innerWidth;
+        //     execs.style.height = parseFloat(execs.style.width) / 1.6 + "px";
+        //     action.style.width = window.innerWidth;
+        //     action.style.height = parseFloat(action.style.width) / 1.6 + "px";
+
+        // }
+	}
+
+</script>
+</body>
+</html>
