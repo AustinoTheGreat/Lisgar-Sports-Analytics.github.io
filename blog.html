@@ -113,6 +113,11 @@
         font-size: 24px;
         background: #f6f6f6;
     }
+
+    .newsTitle {
+        font-size: 12px;
+    }
+
     @media screen and (max-width: 800px) {
         #blogBody {
             display: grid;
@@ -164,32 +169,26 @@
         <section id="content">
             <div class="entry" id="entry2">
                 <div class="entryImage">
-                        <img src="img/missing.gif" alt="image" width="240px" height="240px">
+                        <img src="img/edward.jpg" alt="image" width="240px" height="240px">
                 </div>
                 <div class="entryHeading">
-                    <h2 class="entryTitle">This is an Interesting Title</h2>
-                    <div class="entryInfo">Work of John Doe | January 1st, 2001</div>
+                    <h2 class="entryTitle">Why is Manchester City F.C. so dominant in the PL</h2>
+                    <div class="entryInfo">Work of Edward Li | January 24th, 2018</div>
                 </div>
                 <br /> 
                 <br /> 
-                <div class="entryContent">  Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Dolorem id explicabo ipsam delectus voluptate minima magni eos, aliquid 
-                    exercitationem velit voluptates tempora esse asperiores labore officiis quasi 
-                    consequatur repellat commodi.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Dolorem id explicabo ipsam delectus voluptate minima magni eos, aliquid 
-                    exercitationem velit voluptates tempora esse asperiores labore officiis quasi 
-                    consequatur repellat commodi.
-                    
-
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Dolorem id explicabo ipsam delectus voluptate minima magni eos, aliquid 
-                    exercitationem velit voluptates tempora esse asperiores labore officiis quasi 
-                    consequatur repellat commodi.</div>
+                <div class="entryContent">My topic is on the current soccer 2017-18 Premier League leaders, Manchester City (or just City for short), 
+                    and how they have successfully played their way to a 12-point lead as of Jan 15, 2018 and after 23 games played. Most pundits also 
+                    agree that they have dominated almost every game they’ve played in. In this report, I hope to analyse why and how they have created 
+                    such a large gap points-wise, how they dominate every match so well, and how their stats might explain their success. My thesis, in 
+                    essence, is: Manchester City is the best team in the PL, and trends in their stats can explain why they are doing so well. 
+                    Statistically, they will be the club to win the Premier League title. I expect my thesis to be true because City are top of the 
+                    league and also have many impressive statistics that continue to get better with each game. I also will try to explain why maybe 
+                    other teams aren’t doing so well based off of their statistics. </div>
                 <div class="entryResource">
-                    <button onclick="location.href='index.html'">Document</button>
-                    <button onclick="location.href='index.html'">Presentation</button>
-                    <button onclick="location.href='index.html'">Additional Material</button>
+                    <button formtarget="_blank" onclick="location.href='https://docs.google.com/document/d/1mG2NM9uYl--70UE-iKpzXO5AlsEC4_GargEyjXJeEyg/edit?usp=sharing'">Document</button>
+                    <button formtarget="_blank" onclick="location.href='https://docs.google.com/presentation/d/1ZeXi53BH0TBAn2TXgjPe9hLWLNUEr4sT-tCN97h-050/edit?usp=sharing'">Presentation</button>
+                    <button formtarget="_blank" onclick="location.href='https://www.mancity.com/'">Additional Material</button>
                 </div>
             </div>
             <hr/>
@@ -247,14 +246,14 @@
                     <li><a href="#">Vancouver</a></li>
                 </ul>
             </div>
-            <div class="sidebarSection">
+            <div class="sidebarSection" id="sportSection">
                 <h3 class="sideTitle">Sports News</h3>
                 <ul>
-                    <li><a href="#">Ottawa</a></li>
-                    <li><a href="#">Toronto</a></li>
-                    <li><a href="#">Montreal</a></li>
-                    <li><a href="#">Halifax</a></li>
-                    <li><a href="#">Vancouver</a></li>
+                    <li><a class="newsTitle" href="#">Ottawa</a></li>
+                    <li><a class="newsTitle" href="#">Toronto</a></li>
+                    <li><a class="newsTitle" href="#">Montreal</a></li>
+                    <li><a class="newsTitle" href="#">Halifax</a></li>
+                    <li><a class="newsTitle" href="#">Vancouver</a></li>
                 </ul>
             </div>
 
@@ -265,6 +264,43 @@
 
 <script>
 "use strict";
+var data;
+    var i = 0;
+
+    fetch('https://newsapi.org/v2/top-headlines?sources=bleacher-report&apiKey=cb588a7ba21147f6a841207eba57fdf8')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(myJson) {
+            data = JSON.parse(JSON.stringify(myJson));
+            console.log(JSON.stringify(myJson));
+            //console.log(data);
+            printFoxSports();
+
+        });
+    
+    function printFoxSports() {
+        var items = document.getElementsByClassName("newsTitle");
+
+        for (i = 0; i < 5; i++) {
+            console.log(data.status);
+            
+            items[i].innerHTML = data.articles[i].title;
+            items[i].setAttribute('href', data.articles[i].url);
+            items[i].setAttribute('target', "_blank");
+
+            // var a = document.createElement("a");
+            // var ulist = document.getElementById("list1");
+            // var newItem = document.createElement("li");
+
+            // a.textContent = "...ooo";
+            // a.setAttribute('href', "http://www.msn.com");
+            // newItem.appendChild(a);
+            // ulist.appendChild(newItem);
+            
+        }
+    }
+
 
 </script>
 </body>
