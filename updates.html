@@ -15,7 +15,6 @@
 
     ul {
         list-style-type: none;
-        width: 500px;
     }
 
     h3 {
@@ -44,6 +43,26 @@
         color: black;
         text-decoration: none; /* no underline */
     }
+    #news {
+        width: 40%;
+        margin-left: 2%;
+        float: left;
+    }
+    #twitterFeed {
+        width: 40%;
+        float: left;
+        margin-left: 9%;
+    }
+    #newsHead {
+        background-color: #151E29;
+        color: white;
+        border-radius: 5px;
+        padding: 14px;
+        font: 28px/1.5 Helvetica, Verdana, sans-serif;
+    }
+    #source {
+        float: right;
+    }
 </style>
 
 </head>
@@ -61,65 +80,71 @@
     </div>
     <iframe src="header.html" width=100%, frameborder="0"></iframe>
 
-    <section class="newsSection">
-            <div>
-                <ul>
-                    <li class="BList" onclick="">
-                        <img class="BImg" src="" >
-                        <h3 class="BTitle">Headline</h3>
-                        <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-                    </li>
-                    
-                    <li class="BList">
-                        <img class="BImg" src="" >
-                        <h3 class="BTitle">Headline</h3>
-                        <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-                    </li>
+    <section class="newsSection" id="twitterFeed">
+        <a class="twitter-timeline" data-height="1550" data-theme="dark" href="https://twitter.com/LCIStuServices?ref_src=twsrc%5Etfw">Tweets by LCIStuServices</a> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+       
+    </section>
+    <section class="newsSection" id="news">
+            <h2 id="newsHead">
+                Today on Bleacher Report
+            </h2>
+            <ul>
+                <li class="BList" onclick="">
+                    <img class="BImg" src="" >
+                    <h3 class="BTitle">The Grasslands</h3>
+                    <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                </li>
                 
-                    <li class="BList">
-                        <img class="BImg" src="" >
-                        <h3 class="BTitle">Headline</h3>
-                        <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-                    </li>
-                
-                    <li class="BList">
-                        <img class="BImg" src="" >
-                        <h3 class="BTitle">Headline</h3>
-                        <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-                    </li>
-                    <li class="BList">
-                        <img class="BImg" src="" >
-                        <h3 class="BTitle">Headline</h3>
-                        <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-                    </li>
-                    <li class="BList">
-                        <img class="BImg" src="" >
-                        <h3 class="BTitle">Headline</h3>
-                        <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-                    </li>
-                    <li class="BList">
-                        <img class="BImg" src="" >
-                        <h3 class="BTitle">Headline</h3>
-                        <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-                    </li>
-                    <li class="BList">
-                        <img class="BImg" src="" >
-                        <h3 class="BTitle">Headline</h3>
-                        <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-                    </li>
-                    <li class="BList">
-                        <img class="BImg" src="" >
-                        <h3 class="BTitle">Headline</h3>
-                        <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-                    </li>
-                    <li class="BList">
-                        <img class="BImg" src="" >
-                        <h3 class="BTitle">Headline</h3>
-                        <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
-                    </li>
-                </ul>
-                <p><a href="https://newsapi.org/">Powered By News API</a></p>
-        </div>
+                <li class="BList">
+                    <img class="BImg" src="" >
+                    <h3 class="BTitle">Paradise Found</h3>
+                    <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                </li>
+            
+                <li class="BList">
+                    <img class="BImg" src="" >
+                    <h3 class="BTitle">Smoke On The Water</h3>
+                    <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                </li>
+            
+                <li class="BList">
+                    <img class="BImg" src="" >
+                    <h3 class="BTitle">Headline</h3>
+                    <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                </li>
+                <li class="BList">
+                    <img class="BImg" src="" >
+                    <h3 class="BTitle">Headline</h3>
+                    <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                </li>
+                <li class="BList">
+                    <img class="BImg" src="" >
+                    <h3 class="BTitle">Headline</h3>
+                    <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                </li>
+                <li class="BList">
+                    <img class="BImg" src="" >
+                    <h3 class="BTitle">Headline</h3>
+                    <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                </li>
+                <li class="BList">
+                    <img class="BImg" src="" >
+                    <h3 class="BTitle">Headline</h3>
+                    <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                </li>
+                <li class="BList">
+                    <img class="BImg" src="" >
+                    <h3 class="BTitle">Headline</h3>
+                    <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                </li>
+                <li class="BList">
+                    <img class="BImg" src="" >
+                    <h3 class="BTitle">Headline</h3>
+                    <p class="BDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+                </li>
+            </ul>
+            <p id="source"><a href="https://newsapi.org/">Powered By News API</a></p>
 
     </section>
 
