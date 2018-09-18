@@ -5,7 +5,90 @@
 <title>Lisgar Sports Analytics</title>
 <style>
     @import "nav.css";
+    #content {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+    }
 
+    #pageTitle {
+        color: darkblue;
+        background-color: aliceblue;
+        margin: 0px;
+        padding: 40px;
+        border: 3px solid darkblue;
+    }
+    #sidebar {
+        grid-column-start: 1;
+        width: 197px;
+        border: 3px solid darkblue;
+        background-color: aliceblue;
+        color: darkblue;
+    }
+    #teamSection {
+        grid-column-start: 2;
+    }
+    h4 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    ul {
+        margin-top: 8px;
+    }
+    #pageTitle {
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    .ppl {
+        width: calc((100% - 100px) / 2);
+        margin: 25px;
+        float: left;
+    }
+    .sectionHead {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    hr {
+        background-color: #fff;
+	    border-top: 2px dotted #8c8b8b;
+    }
+    .pplName {
+        text-align: center;
+    }
+    .pplPhoto {
+        margin-left: calc((100% - 114px) / 2);
+    }
+    .members {
+        width: calc((100% - 200px) / 4);
+        margin: 25px;
+        float: left;
+    }
+    .teacher {
+        margin: 25px;
+        float: left;
+
+    }
+    .memberName {
+        text-align: center;
+    }
+    .memberPhoto {
+        margin-left: calc((100% - 114px) / 2);
+    }
+    .teacherPhoto {
+        float: left;
+    }
+    .teacherName {
+        float: left;
+        margin: 20px;
+    }
+    .teacherDescription {
+        float: left;
+        float: top;
+        margin-left: 20px;
+        margin-top: 0px;
+        width: calc(100% - 260px);
+
+    }
 
 
 </style>
@@ -25,10 +108,271 @@
     </div>
     <iframe src="header.html" width=100%, frameborder="0"></iframe>
 
+    <div id="content">
+        <div id="sidebar">
+            <h4>Co-Presidents</h4>
+            <ul class="list">
+                <li>Luka Andjelic</li>
+                <li>Austin Zhu</li>
+            </ul>
+            <hr />
+            <h4>Fantansy Executives</h4>
+            <ul class="list">
+                <li>Jake Wright</li>
+                <li>Justin Chen</li>
+                <li>Nick Tanouchev</li>
+                <li>Matthew Wang</li>
+                <li>Jonah Leinwand</li>
+            </ul>
+            <hr />
+            <h4>Outreach Executives</h4>
+            <ul class="list">
+                <li>Rassam Yazdi</li>
+                <li>Matthew Doyle</li>
+                <li>Nicholas Smith</li>
+            </ul>
+            <hr />
+            <h4>Statistics Executives</h4>
+            <ul class="list">
+                <li>Noah Jennings</li>
+                <li>Anil esle</li>
+                <li>Nathan Chen</li>
+            </ul>
+            <hr />
+            <h4>Members</h4>
+            <ul class="list">
+                <li>John Doe</li>
+                <li>John Doe</li>
+                <li>John Doe</li>
+                <li>John Doe</li>
+            </ul>
+        </div>
+
+        <div class="teamSection">
+            <div>
+                <h1 id="pageTitle">Meet the Team</h1>
+            </div>
+            <div class="sectionHead">
+                <h2 class="sectionTitle">Supervisor</h2>
+                <p class="sectionDescription">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem animi voluptatibus ex quis, placeat quae 
+                    excepturi praesentium tempore minus quaerat, facilis in nisi qui officia, 
+                    culpa impedit maiores quisquam ullam.</p>
+            </div>
+            <div class="teacher">
+                <img class="teacherPhoto" src="img/missing.gif" alt="image" width="160px" height="160px">
+                <h3 class="teacherName">Robert McDonald</h3>
+                <p class="teacherDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto, illum unde! Distinctio sed esse sint doloribus quas sit quibusdam 
+                    quis nam tempora officia, rem accusantium. Earum nemo voluptatem tempora! Voluptatum!</p>
+            </div>
+            <hr>
+            <div class="sectionHead">
+                <h2 class="sectionTitle">Co-Presidents</h2>
+                <p class="sectionDescription">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem animi voluptatibus ex quis, placeat quae 
+                    excepturi praesentium tempore minus quaerat, facilis in nisi qui officia, 
+                    culpa impedit maiores quisquam ullam.</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Luka Andjelic</h3>
+                <p class="pplDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto, illum unde! Distinctio sed esse sint doloribus quas sit quibusdam 
+                    quis nam tempora officia, rem accusantium. Earum nemo voluptatem tempora! Voluptatum!</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Austin Zhu</h3>
+                <p class="pplDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                    quidem, est vitae deserunt aspernatur, eveniet facilis amet temporibus adipisci nesciunt 
+                    quod atque dolores eaque fuga maiores odio perspiciatis vel debitis.</p>
+            </div>
+            <hr>
+            <div class="sectionHead">
+                <h2 class="sectionTitle">Fantansy Executives</h2>
+                <p class="sectionDescription">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem animi voluptatibus ex quis, placeat quae 
+                    excepturi praesentium tempore minus quaerat, facilis in nisi qui officia, 
+                    culpa impedit maiores quisquam ullam.</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Luka Andjelic</h3>
+                <p class="pplDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto, illum unde! Distinctio sed esse sint doloribus quas sit quibusdam 
+                    quis nam tempora officia, rem accusantium. Earum nemo voluptatem tempora! Voluptatum!</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Austin Zhu</h3>
+                <p class="pplDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                    quidem, est vitae deserunt aspernatur, eveniet facilis amet temporibus adipisci nesciunt 
+                    quod atque dolores eaque fuga maiores odio perspiciatis vel debitis.</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Austin Zhu</h3>
+                <p class="pplDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                    quidem, est vitae deserunt aspernatur, eveniet facilis amet temporibus adipisci nesciunt 
+                    quod atque dolores eaque fuga maiores odio perspiciatis vel debitis.</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Austin Zhu</h3>
+                <p class="pplDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                    quidem, est vitae deserunt aspernatur, eveniet facilis amet temporibus adipisci nesciunt 
+                    quod atque dolores eaque fuga maiores odio perspiciatis vel debitis.</p>
+            </div>
+            <hr>
+            <div class="sectionHead">
+                <h2 class="sectionTitle">Outreach Executives</h2>
+                <p class="sectionDescription">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem animi voluptatibus ex quis, placeat quae 
+                    excepturi praesentium tempore minus quaerat, facilis in nisi qui officia, 
+                    culpa impedit maiores quisquam ullam.</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Luka Andjelic</h3>
+                <p class="pplDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto, illum unde! Distinctio sed esse sint doloribus quas sit quibusdam 
+                    quis nam tempora officia, rem accusantium. Earum nemo voluptatem tempora! Voluptatum!</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Austin Zhu</h3>
+                <p class="pplDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                    quidem, est vitae deserunt aspernatur, eveniet facilis amet temporibus adipisci nesciunt 
+                    quod atque dolores eaque fuga maiores odio perspiciatis vel debitis.</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Austin Zhu</h3>
+                <p class="pplDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                    quidem, est vitae deserunt aspernatur, eveniet facilis amet temporibus adipisci nesciunt 
+                    quod atque dolores eaque fuga maiores odio perspiciatis vel debitis.</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Austin Zhu</h3>
+                <p class="pplDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                    quidem, est vitae deserunt aspernatur, eveniet facilis amet temporibus adipisci nesciunt 
+                    quod atque dolores eaque fuga maiores odio perspiciatis vel debitis.</p>
+            </div>
+            <hr>
+            <div class="sectionHead">
+                <h2 class="sectionTitle">Statistics Executives</h2>
+                <p class="sectionDescription">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem animi voluptatibus ex quis, placeat quae 
+                    excepturi praesentium tempore minus quaerat, facilis in nisi qui officia, 
+                    culpa impedit maiores quisquam ullam.</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Luka Andjelic</h3>
+                <p class="pplDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto, illum unde! Distinctio sed esse sint doloribus quas sit quibusdam 
+                    quis nam tempora officia, rem accusantium. Earum nemo voluptatem tempora! Voluptatum!</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Austin Zhu</h3>
+                <p class="pplDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                    quidem, est vitae deserunt aspernatur, eveniet facilis amet temporibus adipisci nesciunt 
+                    quod atque dolores eaque fuga maiores odio perspiciatis vel debitis.</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Austin Zhu</h3>
+                <p class="pplDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                    quidem, est vitae deserunt aspernatur, eveniet facilis amet temporibus adipisci nesciunt 
+                    quod atque dolores eaque fuga maiores odio perspiciatis vel debitis.</p>
+            </div>
+            <div class="ppl">
+                <img class="pplPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="pplName">Austin Zhu</h3>
+                <p class="pplDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                    quidem, est vitae deserunt aspernatur, eveniet facilis amet temporibus adipisci nesciunt 
+                    quod atque dolores eaque fuga maiores odio perspiciatis vel debitis.</p>
+            </div>
+            <hr>
+            <div class="sectionHead">
+                <h2 class="sectionTitle">Members</h2>
+                <p class="sectionDescription">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem animi voluptatibus ex quis, placeat quae 
+                    excepturi praesentium tempore minus quaerat, facilis in nisi qui officia, 
+                    culpa impedit maiores quisquam ullam.</p>
+            </div>
+            <div class="members">
+                <img class="memberPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="memberName">Luka Andjelic</h3>
+            </div>
+            <div class="members">
+                <img class="memberPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="memberName">Luka Andjelic</h3>
+            </div>
+            <div class="members">
+                <img class="memberPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="memberName">Luka Andjelic</h3>
+            </div>
+            <div class="members">
+                <img class="memberPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="memberName">Luka Andjelic</h3>
+            </div>
+            <div class="members">
+                <img class="memberPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="memberName">Luka Andjelic</h3>
+            </div>
+            <div class="members">
+                <img class="memberPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="memberName">Luka Andjelic</h3>
+            </div>
+            <div class="members">
+                <img class="memberPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="memberName">Luka Andjelic</h3>
+            </div>
+            <div class="members">
+                <img class="memberPhoto" src="img/missing.gif" alt="image" width="120px" height="120px">
+                <h3 class="memberName">Luka Andjelic</h3>
+            </div>
+
+
+            
+        </div>
+    </div>
+    <iframe src="footer.html" width=100%, height="200px" frameborder="0"></iframe>
+
 
 
 <script>
 "use strict";
+    // var side = document.getElementById("sidebar");
+    // window.addEventListener("load", ()=> {
+    //     side = window.innerHeight + "px";
+    // }, false);
+    var descriptions = document.getElementsByClassName("pplDescription");
+    
+    window.addEventListener("load", setHeight, false);
+    window.addEventListener("resize", setHeight, false);
+    function setHeight() {
+        var i = 0;
+        var max = 0;
+        for (i = 0; i < descriptions.length; i++) {
+            descriptions[i].style.paddingBottom = "0px";
+            if (descriptions[i].clientHeight > max) {
+                max = descriptions[i].clientHeight;
+            }
+        }
+        console.log(max);
+        for (i = 0; i < descriptions.length; i++) {
+            if (descriptions[i].clientHeight < max) {
+                console.log("Hello");
+                descriptions[i].style.paddingBottom = max - descriptions[i].clientHeight + "px";
+            }
+        }
+        
+    }
 
 </script>
 </body>
