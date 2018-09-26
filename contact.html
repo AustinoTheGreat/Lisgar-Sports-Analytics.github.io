@@ -2,9 +2,34 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<title>Lisgar Sports Analytics</title>
+<title>Lisgar Sports Analytics - Contact Us</title>
 <style>
     @import "nav.css";
+
+    #mainBody {
+        display: grid;
+        grid-template-columns: 640px 500px;
+        grid-auto-rows: auto;
+    }
+    #googleForm {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    #mapouter {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    #info {
+        margin: 42px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        #mainBody {
+            margin-left: calc((100% - 1140px) / 2);
+        }
+
+    }
+
 
 
 
@@ -24,6 +49,24 @@
         <a class="active" href="contact.html">Contact Us</a>
     </div>
     <iframe src="header.html" width=100%, frameborder="0"></iframe>
+    <div id="mainBody">
+        <iframe id="googleForm"src="https://docs.google.com/forms/d/e/1FAIpQLSd9pOYYd4RfG8-4JrvZ9MVTxFmu3k-_MUOvPbTp4lxbG0VDEw/viewform?embedded=true" 
+        width="640" height="1134" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <div id="mapouter"><div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=lisgar%20collegiate%20institute&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">
+            </a></div><style>.mapouter{text-align:right;height:500px;width:500px;}.gmap_canvas 
+            {overflow:hidden;background:none!important;height:500px;width:500px;}</style>
+            <div id="info">
+                <p><b>Meeting:</b> Wednesday Lunch in Room 356</p>
+                <p><b>Email:</b> lcisportsanalytics@gmail.com</p>
+                <p><b>Remind code:</b> @landje</p>
+                <p><b>Instagram:</b> @lcisportsanalytics</p>
+            </div>
+
+        </div>
+    </div>
+
     <iframe src="footer.html" width=100%, height="200px" frameborder="0"></iframe>
 
 
